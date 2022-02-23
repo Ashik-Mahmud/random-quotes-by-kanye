@@ -18,6 +18,7 @@ body{
     justify-content: center;
     min-height: 100vh;
     background: var(--primary-color);
+    user-select: none;
 }
 .wrapper{
     width: min(100%, 400px);
