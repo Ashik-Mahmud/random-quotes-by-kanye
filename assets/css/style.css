@@ -1,0 +1,63 @@
+/* Quotes maker css here  */
+
+/* variables  */
+:root{
+    --primary-color: #40739e;
+}
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: poppins;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--primary-color);
+}
+.wrapper{
+    width: min(100%, 400px);
+    position: relative;
+    background-color: #fefefe;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+.wrapper blockquote{
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 1rem 0rem;
+}
+.wrapper blockquote::before{
+    content: open-quote;
+    font-size: 2rem;
+}
+.wrapper blockquote::after{
+    content: close-quote;
+    font-size: 2rem;
+    position: absolute;
+}
+.wrapper .btn-group{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 1rem;
+    justify-content: center;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+}
+.btn-group button{
+    margin: 0rem .4rem;
+    padding: .5rem 1rem;
+    font-family: poppins;
+    background-color: var(--primary-color);
+    color: #fefefe;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
